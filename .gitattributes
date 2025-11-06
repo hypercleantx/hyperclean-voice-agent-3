@@ -1,0 +1,2 @@
+# Use LF for all files to ensure consistent line endings across platforms
+* text=auto eol=lf
