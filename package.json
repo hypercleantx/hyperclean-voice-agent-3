@@ -1,0 +1,20 @@
+{
+  "name": "hyperclean-voice-agent-3",
+  "version": "1.0.0",
+  "description": "HyperClean Voice Agent v3 – a bilingual voice AI agent powered by OpenAI Realtime and Twilio Media Streams",
+  "main": "server/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.13.0",
+    "openai": "^4.20.0",
+    "alawmulaw": "^1.0.4",
+    "dotenv": "^16.3.1"
+  }
+}
