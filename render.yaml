@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: hyperclean-voice-agent-3
+    env: node
+    runtime: node
+    plan: starter
+    region: oregon
+    buildCommand: "npm ci --production"
+    startCommand: "npm start"
+    autoDeploy: true
+    healthCheckPath: "/health"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: LOG_LEVEL
+        value: info
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL_REALTIME
+        value: gpt-4o-realtime-preview
+      - key: STREAM_SHARED_SECRET
+        generateValue: true
+      - key: BOOKING_LINK_URL
+        value: https://www.hypercleantx.com/#services
